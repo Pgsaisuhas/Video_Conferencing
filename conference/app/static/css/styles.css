@@ -1,0 +1,407 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto+Condensed&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #142f5f;
+}
+
+.background-container {
+    background-image: url('../img/signin.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind the content */
+}
+
+.background-container1 {
+    background-image: url('../img/signup.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind the content */
+}
+
+.background-container2 {
+    background-image: url('../img/dashboard.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind the content */
+}
+.background-container3 {
+    background-image: url('../img/join.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind the content */
+}
+
+.background-container4{
+    background-image: url('../img/conf.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(5px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.container .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #000000;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: #003e95d2;
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #fff;
+  background: #003e95d2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: #006653;
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: #003e95d2;
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+
+
+
+/*this is updated css*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* Add styles for the navigation bar */
+.navbar {
+    
+    padding: 40px 0px; /* Adjust padding as needed */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.project-name {
+    color: #fff; /* Change the text color as needed */
+    margin-left: 30px; /* Adjust margin as needed */
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding-right: 10px;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 30px; /* Adjust the spacing between list items as needed */
+}
+
+.nav-list li a {
+    color: #fff; /* Change the link color as needed */
+    text-decoration: none;
+}
+
+/* Add an anchor link hover effect if desired */
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Update the content's margin to make space for the navigation bar */
+#content {
+    margin: 120px auto; /* Adjust the top margin as needed to avoid overlapping */
+}
+
+
+
+#content {
+    color: antiquewhite;
+    border-radius: 10px;
+    margin: 10% auto;
+    width: 50%;
+}
+
+.text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn-container {
+    text-align: center;
+}
+.btn-container a{
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0159b8c4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 20px;
+    margin: 40px 10px;
+    transition: background-color 0.3s;
+    width: 25%;
+}
+
+.btn:hover {
+    background-color: #08407ca8;
+}
+
+.social-icons {
+    margin-top: 10px;
+    margin-left: 4%;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+/* Center the div with class name 'intro'
+    and set the width to 100% */
+.intro {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Set the background color to green
+    and the text color to white */
+.intro {
+  color: white;
+}
+
+/* Make the text inside the div with class name intro look bold and attractive */
+.intro h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* center the h2 tag inside the div with class name intro */
+.intro h2 {
+  text-align: center;
+}
+
+/* vertically align the div with class name intro to the center of the page */
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* make the buttons inside the div with class name intro look attractive */
+.intro a {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* center the buttons inside the div with class name intro */
+.intro a {
+  margin-top: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* make the buttons inside the div with class name intro look attractive when hovered */
+.intro a:hover {
+  background-color: #45a049;
+}
+
+/* center the div named dashboard */
+.dashboard {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+/* Center the content inside the 'dashboard' div */
+.dashboard {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This centers vertically in the viewport */
+  }
+  
+  .dashboard h1 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  /* Style the links (buttons) */
+  .dashboard a {
+    background-color: #19a89e;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0; /* Spacing between buttons */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Half the width of the container */
+    border-radius: 5px;
+  }
+  
+  .dashboard a:hover {
+    background-color: #0177b29c;
+  }
+  
+  /* Style for Font Awesome icons */
+  .dashboard a i {
+    margin-right: 10px; /* Add space between the icon and text */
+    font-size: 24px; /* Adjust the icon size as needed */
+  }
+  .abs img {
+    width: 75%; /* You can adjust this percentage to make the image smaller or larger */
+    height: auto; /* This maintains the aspect ratio */
+  }
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .content {
+    margin-left: 250px;
+    flex: 0.5;
+    text-align: center;
+  }
+  
+  .abs {
+    flex: 1;
+    text-align: center;
+  }
+  
+  

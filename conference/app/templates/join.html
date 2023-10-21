@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <style>
+    #goBackButton {
+        background-color: #11b4c3c0;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 2%;
+        margin-left: 2%;
+        border-radius: 5px;
+    }
+
+    #goBackButton:hover {
+        background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <div class="background-container3"></div>
+    <button id="goBackButton">Go Back</button>
+  <div class="container">
+    <div class="login form">
+      <header>Join Room</header>
+      <form action="{% url 'join' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter room ID" name="roomID">
+        <input type="submit" class="button" value="Join">
+        <center>
+          {% if success %}
+          <p style="color: green;"><b>{{ success }}</b></p>
+          {% endif %}
+          {% if error %}
+          <p style="color: red;">{{ error }}</p>
+          {% endif %}
+        </center>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+    function goBackToDashboard() {
+        // Replace 'dashboard-url' with the actual URL of your dashboard page
+        window.location.href = '/dashboard/';
+    }
+    
+    // Attach the function to the "Go Back" button click event
+    document.getElementById('goBackButton').addEventListener('click', goBackToDashboard);
+</script>
+</html>
