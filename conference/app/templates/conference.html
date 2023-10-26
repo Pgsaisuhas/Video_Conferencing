@@ -59,8 +59,8 @@ window.onload = function () {
     const roomID = getUrlParams(window.location.href)['roomID'] || (Math.floor(Math.random() * 10000) + "");
     const userID = Math.floor(Math.random() * 10000) + "";
     const userName = "{{ name }}"
-    const appID = 1928530099; //change this
-    const serverSecret = "bf1da9f7ca3aa38e2a7fbb027951af1a"; // change this
+    const appID = 0; //create an account in Zego cloud and change this with your id
+    const serverSecret = "your Key"; //change this to your key
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, userID, userName);
 
     
