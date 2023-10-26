@@ -38,7 +38,7 @@ def signin(request):
 def dashboard(request):
     return render(request, 'dashboard.html', {'name': request.user.first_name})
 
-@login_required
+@login_required(login_url='/signin/')
 def conferencing(request):
     return render(request, 'conference.html', {'name': request.user.first_name + " " + request.user.last_name})
 
@@ -47,7 +47,7 @@ def signout(request):
     logout(request)
     return redirect("/signin")
 
-@login_required
+@login_required(login_url='/signin/')
 def join(request):
     if request.method == 'POST':
         roomID = request.POST['roomID']
